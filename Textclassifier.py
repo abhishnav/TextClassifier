@@ -11,7 +11,6 @@ y = bbc_text.category
 X_train, X_test, y_train, y_test = train_test_split(X, y, train_size = 0.6, random_state = 1)
 vector = CountVectorizer(stop_words = 'english',lowercase=False)
 vector.fit(X_train)
-vector.vocabulary_
 X_transformed = vector.transform(X_train)
 X_transformed.toarray()
 X_test_transformed = vector.transform(X_test)
